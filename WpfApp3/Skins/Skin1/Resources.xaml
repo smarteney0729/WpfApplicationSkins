@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WpfApp3.Skins.Skin1">
+
+      <x:Static Member="local:Properties.Copyright" x:Key="Copyright"/>
+      <x:Static Member="local:Properties.ApplicationTitle" x:Key="ApplicationTitle"/>
+  
+      <BitmapImage x:Key="LogoLarge" UriSource="pack://application:,,,/skins/skin1/acme1.png" CacheOption="None"/>
+
+      <Style x:Key="H1" TargetType="{x:Type ContentControl}">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="24pt"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="FontStyle" Value="Italic"/>
+      </Style>
+  
+    <CompositeCollection x:Key="SettingsMenuItems">
+      <Separator/>
+      <MenuItem Header="Settings 1 ..."/>
+      <MenuItem Header="Settings 2 ..."/>
+    </CompositeCollection>
+</ResourceDictionary>
